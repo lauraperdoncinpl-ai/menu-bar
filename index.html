@@ -33,7 +33,7 @@
       animation: fadeIn 1.2s ease;
     }
 
-    /* LOGO PIÙ GRANDE */
+    /* LOGO */
     .logo {
       width: 140px;
       margin-bottom: 25px;
@@ -56,44 +56,32 @@
       margin-bottom: 40px;
     }
 
-    /* Bottone menu */
-    .button {
-      display: block;
-      margin: 0 auto;
-      padding: 16px 34px;
-      width: 80%;
-      max-width: 280px;
-      background: linear-gradient(135deg, #d4af37, #b8962e);
-      color: black;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-      font-size: 16px;
-      transition: all 0.3s ease;
-    }
-
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(212,175,55,0.6);
-    }
-
-    .button:active {
-      transform: scale(0.97);
-    }
-
-    /* Bottone Instagram */
+    /* BOTTONI BASE */
+    .button,
     .instagram-btn {
       display: block;
-      margin: 15px auto 0;
-      padding: 14px 30px;
+      margin: 0 auto;
+      padding: 16px 30px;
       width: 80%;
       max-width: 280px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: 500;
       font-size: 15px;
-      color: white;
+      transition: all 0.15s ease;
+    }
 
+    /* Bottone menù */
+    .button {
+      background: linear-gradient(135deg, #d4af37, #b8962e);
+      color: black;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Bottone Instagram */
+    .instagram-btn {
+      margin-top: 15px;
+      color: white;
       background: linear-gradient(
         45deg,
         #feda75,
@@ -102,19 +90,26 @@
         #962fbf,
         #4f5bd5
       );
-
       background-size: 200% 200%;
-      transition: all 0.3s ease;
+    }
+
+    /* HOVER */
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.4);
     }
 
     .instagram-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(214,41,118,0.6);
+      transform: translateY(-2px);
       background-position: right center;
+      box-shadow: 0 10px 20px rgba(214,41,118,0.4);
     }
 
+    /* 🔥 FEEDBACK CLICK MOBILE + DESKTOP */
+    .button:active,
     .instagram-btn:active {
-      transform: scale(0.97);
+      transform: scale(0.96);
+      opacity: 0.85;
     }
 
     .footer {
@@ -127,8 +122,10 @@
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
     }
+
   </style>
 </head>
+
 <body>
 
   <div class="overlay">
