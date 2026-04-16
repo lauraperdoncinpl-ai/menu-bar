@@ -5,6 +5,9 @@
   <title>Menù</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO -->
+  <meta name="description" content="Menù del bar - dalla colazione al dopocena">
+
   <!-- Font eleganti -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -39,9 +42,15 @@
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 10px;
       letter-spacing: 1px;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
     }
 
     p {
@@ -66,11 +75,33 @@
       font-weight: 500;
       font-size: 16px;
       transition: all 0.3s ease;
+      width: 80%;
+      max-width: 280px;
     }
 
     a.button:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(212,175,55,0.6);
+    }
+
+    a.button:active {
+      transform: scale(0.97);
+    }
+
+    /* Instagram */
+    .instagram {
+      display: block;
+      margin-top: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.85;
+      transition: all 0.3s ease;
+    }
+
+    .instagram:hover {
+      opacity: 1;
+      text-shadow: 0 0 8px rgba(255,255,255,0.5);
     }
 
     .footer {
@@ -100,6 +131,11 @@
 
       <a class="button" href="menu.pdf" target="_blank">
         Scopri il menù
+      </a>
+
+      <!-- Instagram -->
+      <a class="instagram" href="https://instagram.com/caffe_golin" target="_blank">
+        📸 Seguici su Instagram
       </a>
 
       <div class="footer">
